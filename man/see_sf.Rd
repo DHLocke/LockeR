@@ -14,7 +14,7 @@ get the sf object in memory as a character string
 }
 \examples{
 see_sf()
-require(sfdep)
-guerry # a built in dataset in the sfdep package
+library(sfdep)
+test_sf_object <- guerry # a built in dataset in the sfdep package
 see_sf()
 }
