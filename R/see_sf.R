@@ -1,7 +1,7 @@
 # # see which objects are of type sf
 # # thanks Kelly Hondula
 # # https://scholar.google.com/citations?user=Xdhvu9QAAAAJ&hl=en
-#' get the sf object in memory as a character string
+#' get sf object in memory as a character string
 #'
 #' @import sf
 #' @import sfdep

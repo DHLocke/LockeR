@@ -2,7 +2,7 @@
 % Please edit documentation in R/see_sf.R
 \name{see_sf}
 \alias{see_sf}
-\title{get the sf object in memory as a character string}
+\title{get sf object in memory as a character string}
 \usage{
 see_sf()
 }
@@ -10,7 +10,7 @@ see_sf()
 a character vector
 }
 \description{
-get the sf object in memory as a character string
+get sf object in memory as a character string
 }
 \examples{
 see_sf()
