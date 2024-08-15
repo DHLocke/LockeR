@@ -21,14 +21,3 @@ see_sf <-
       names() |>
       as.character()       # my simple features, as a character vector
     }
-
-see_sf()
-
-# see_sf() -> sf_in_memory
-
-
-
-## what are the spatial references of those SF classes?
-# get the coordinate reference system (CRS) of spatial
-# call this get_crs?
-# mget(sf_in_memory) %>% purrr::map(~st_crs(.x)$epsg) %>% unlist()
