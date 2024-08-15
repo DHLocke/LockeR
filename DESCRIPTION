@@ -17,3 +17,5 @@ Imports:
     base,
     purrr,
     stringr
+URL: https://github.com/DHLocke/LockeR
+BugReports: https://github.com/DHLocke/LockeR/issues
