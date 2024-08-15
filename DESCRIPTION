@@ -16,6 +16,9 @@ Imports:
     sf,
     base,
     purrr,
-    stringr
+    stringr,
+    dplyr,
+    tibble,
+    tidyr
 URL: https://github.com/DHLocke/LockeR
 BugReports: https://github.com/DHLocke/LockeR/issues
