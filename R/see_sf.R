@@ -13,6 +13,7 @@
 #' library(sfdep)
 #' test_sf_object <- guerry # a built in dataset in the sfdep package
 #' see_sf()
+#' see_spatial()
 see_sf <-
   function(){
     # what's in memory that are sf - simple features?
@@ -20,4 +21,15 @@ see_sf <-
                 ~ any(stringr::str_detect(., "sf"))) |> # selects elements with sf in them
       names() |>
       as.character()       # my simple features, as a character vector
-    }
+  }
+
+see_spatial <- function(){
+  # what's in memory that are sf - spatial features?
+  purrr::keep(eapply(.GlobalEnv, class),
+              ~ any(stringr::str_detect(., paste(c('sf', 'sp', 'RasterLayer'), collapse = '|')))) |>
+    names() |>
+    as.character()       # my simple features
+}
+
+# ## what are the spatial references of those SF classes?
+# mget(spatial_in_memory) %>% purrr::map(~crs(.x)) %>% unlist()
