@@ -17,4 +17,5 @@ see_sf()
 library(sfdep)
 test_sf_object <- guerry # a built in dataset in the sfdep package
 see_sf()
+see_spatial()
 }

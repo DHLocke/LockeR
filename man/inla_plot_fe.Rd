@@ -10,7 +10,7 @@ inla_plot_fe(inla_model)
 \item{inla_model}{}
 }
 \value{
-a ggplot graph of fixed effects derived from a model fit with INLA::inla()
+a ggplot graph (or table with "inla_table_fe") of fixed effects derived from a model fit with INLA::inla()
 }
 \description{
 Plot fixed effects from model fit with INLA::inla

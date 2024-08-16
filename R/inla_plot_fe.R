@@ -2,7 +2,7 @@
 #'
 #' @param inla_model
 #'
-#' @return a ggplot graph of fixed effects derived from a model fit with INLA::inla()
+#' @return a ggplot graph (or table with "inla_table_fe") of fixed effects derived from a model fit with INLA::inla()
 #' @export
 #'
 #' @examples
@@ -22,3 +22,12 @@ inla_plot_fe <- function(inla_model){
     ggplot2::theme_bw() +
     NULL
 }
+
+inla_table_fe <-
+  function(inla_model){
+    inla_model |>
+      purrr::pluck('summary.fixed') |>
+      tibble::rownames_to_column(var = 'Predictors') |>
+      dplyr::select(Predictors, median = `0.5quant`, lower = `0.025quant`, upper = `0.975quant`) |>
+      dplyr::mutate(across(c(-Predictors), round, 3))
+  }
