@@ -4,13 +4,14 @@
 #' @export
 #'
 #' @examples
-#' get_inla()
-#' get_inla() |> mget()
-#' test_inla_model <- inla(rnorm)
+#' get_inla()                             # nothing
+#' #' mtcars <- mtcars |> as.data.frame() # get data
+#' m1 <- inla(mpg ~ 1   , data = mtcars)  # fit an intercept-only model
+#' m2 <- inla(mpg ~ disp, data = mtcars)  # fit another model
+#' get_inla()                             # character vector of models
+#' get_inla() |> mget()                   # list, ripe for map(...)
 get_inla <- function(){
   purrr::keep(eapply(.GlobalEnv, class), ~any(str_detect(., 'inla'))) |>
     names() |>
     as.character()
 }
-
-

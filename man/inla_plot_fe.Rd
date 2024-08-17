@@ -16,9 +16,14 @@ a ggplot graph (or table with "inla_table_fe") of fixed effects derived from a m
 Plot fixed effects from model fit with INLA::inla
 }
 \examples{
-mtcars <- mtcars |> as.data.frame()
-m1 <- inla(mpg ~ 1   , data = mtcars)
-m2 <- inla(mpg ~ disp, data = mtcars)
-inla_plot_fe(m1)
-inla_plot_fe(m2)
+mtcars <- mtcars |> as.data.frame() # get data
+m1 <- inla(mpg ~ 1   , data = mtcars) # fit an intercept-only model
+m2 <- inla(mpg ~ disp, data = mtcars) # fit another model
+inla_plot_fe(m1) # fixed effects, m1
+inla_table_fe(m1)
+inla_plot_fe(m2) # fixed effects, m2
+inla_table_fe(m2)
+# great when used in conjunction with `get_inla()`
+get_inla() |> mget() |> map(inla_table_fe)
+get_inla() |> mget() |> map(inla_plot_fe)
 }
