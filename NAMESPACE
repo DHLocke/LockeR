@@ -2,7 +2,6 @@
 
 export(get_inla)
 export(inla_plot_fe)
-export(scale_y_reordered)
 export(see_sf)
 export(to_cel)
 export(to_fahr)
