@@ -14,7 +14,7 @@ get character vector of INLA objects in memory
 }
 \examples{
 get_inla()                             # nothing
-#' mtcars <- mtcars |> as.data.frame() # get data
+mtcars <- mtcars |> as.data.frame() # get data
 m1 <- inla(mpg ~ 1   , data = mtcars)  # fit an intercept-only model
 m2 <- inla(mpg ~ disp, data = mtcars)  # fit another model
 get_inla()                             # character vector of models

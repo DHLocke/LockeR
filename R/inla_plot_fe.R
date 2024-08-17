@@ -2,7 +2,7 @@
 #'
 #' @param inla_model
 #'
-#' @return a ggplot graph (or table with "inla_table_fe") of fixed effects derived from a model fit with INLA::inla()
+#' @return a ggplot graph (or table with `inla_table_fe`) of fixed effects derived from a model fit with INLA::inla()
 #' @export
 #'
 #' @examples

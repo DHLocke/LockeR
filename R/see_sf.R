@@ -9,11 +9,12 @@
 #' @export
 #'
 #' @examples
-#' see_sf()
+#' see_sf()                 # nothing
 #' library(sfdep)
 #' test_sf_object <- guerry # a built in dataset in the sfdep package
-#' see_sf()
-#' see_spatial()
+#' see_sf()                 # character string of sf objects
+#' see_spatial()            # also finds objects of class sp, sf, or RasterLayer
+#' # TODO link to get_crs
 see_sf <-
   function(){
     # what's in memory that are sf - simple features?
