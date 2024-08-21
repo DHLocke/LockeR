@@ -20,3 +20,6 @@ m2 <- inla(mpg ~ disp, data = mtcars)  # fit another model
 get_inla()                             # character vector of models
 get_inla() |> mget()                   # list, ripe for map(...)
 }
+\seealso{
+\code{\link{inla_plot_fe}}, \code{\link{inla_table_fe}}
+}

@@ -6,7 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of LockeR is to …
+LockeR is a safe place to keep random code snippets and functions for
+reuse.
 
 ## Installation
 

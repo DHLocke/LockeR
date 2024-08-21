@@ -2,6 +2,7 @@
 #'
 #' @return a character vector of INLA objects in memory
 #' @export
+#' @seealso \code{\link{inla_plot_fe}}, \code{\link{inla_table_fe}}
 #'
 #' @examples
 #' get_inla()                             # nothing
@@ -11,7 +12,7 @@
 #' get_inla()                             # character vector of models
 #' get_inla() |> mget()                   # list, ripe for map(...)
 get_inla <- function(){
-  purrr::keep(eapply(.GlobalEnv, class), ~any(str_detect(., 'inla'))) |>
+  purrr::keep(eapply(.GlobalEnv, class), ~any(stringr::str_detect(., 'inla'))) |>
     names() |>
     as.character()
 }

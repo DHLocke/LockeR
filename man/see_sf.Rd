@@ -20,3 +20,6 @@ see_sf()                 # character string of sf objects
 see_spatial()            # also finds objects of class sp, sf, or RasterLayer
 # TODO link to get_crs
 }
+\seealso{
+\code{\link{\see_spatial}}
+}
