@@ -19,6 +19,8 @@ Imports:
     stringr,
     dplyr,
     tibble,
-    tidyr
+    tidyr,
+    ggplot2,
+    INLA
 URL: https://github.com/DHLocke/LockeR
 BugReports: https://github.com/DHLocke/LockeR/issues

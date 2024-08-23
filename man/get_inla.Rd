@@ -13,13 +13,13 @@ a character vector of INLA objects in memory
 get character vector of INLA objects in memory
 }
 \examples{
-get_inla()                             # nothing
-mtcars <- mtcars |> as.data.frame() # get data
-m1 <- inla(mpg ~ 1   , data = mtcars)  # fit an intercept-only model
-m2 <- inla(mpg ~ disp, data = mtcars)  # fit another model
-get_inla()                             # character vector of models
-get_inla() |> mget()                   # list, ripe for map(...)
+get_inla()                                   # nothing if you have no INLA objects
+mtcars <- mtcars |> as.data.frame()          # get data
+m1 <- INLA::inla(mpg ~ 1   , data = mtcars)  # fit an intercept-only model
+m2 <- INLA::inla(mpg ~ disp, data = mtcars)  # fit another model
+get_inla()                                   # character vector of models
+get_inla() |> mget()                         # list, ripe for map(...)
 }
 \seealso{
-\code{\link{inla_plot_fe}}, \code{\link{inla_table_fe}}
+\code{inla_plot_fe} for plotting fixed effects and, \code{inla_table_fe} for extracting tables of fixed effects from INLA objects
 }

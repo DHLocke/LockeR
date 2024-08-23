@@ -2,7 +2,9 @@
 
 export(get_inla)
 export(inla_plot_fe)
+export(inla_table_fe)
 export(see_sf)
+export(see_spatial)
 export(to_cel)
 export(to_fahr)
 import(sf)

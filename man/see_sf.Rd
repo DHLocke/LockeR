@@ -2,7 +2,7 @@
 % Please edit documentation in R/see_sf.R
 \name{see_sf}
 \alias{see_sf}
-\title{get sf object in memory as a character string}
+\title{get sf objects in memory as character vector}
 \usage{
 see_sf()
 }
@@ -10,7 +10,7 @@ see_sf()
 a character vector
 }
 \description{
-get sf object in memory as a character string
+get sf objects in memory as character vector
 }
 \examples{
 see_sf()                 # nothing
@@ -21,5 +21,5 @@ see_spatial()            # also finds objects of class sp, sf, or RasterLayer
 # TODO link to get_crs
 }
 \seealso{
-\code{\link{\see_spatial}}
+\code{see_spatial}
 }

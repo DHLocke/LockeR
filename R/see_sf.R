@@ -1,14 +1,14 @@
 # # see which objects are of type sf
 # # thanks Kelly Hondula
 # # https://scholar.google.com/citations?user=Xdhvu9QAAAAJ&hl=en
-#' get sf object in memory as a character string
+#' get sf objects in memory as character vector
 #'
 #' @import sf
 #' @import sfdep
 #' @return a character vector
 #' @export
 #'
-#' @seealso \code{\link{\see_spatial}}
+#' @seealso `see_spatial`
 #'
 #' @examples
 #' see_sf()                 # nothing
@@ -26,14 +26,4 @@ see_sf <-
       as.character()       # my simple features, as a character vector
   }
 
-see_spatial <-
-  function(){
-    # what's in memory that are sf - spatial features?
-    purrr::keep(eapply(.GlobalEnv, class),
-                ~ any(stringr::str_detect(., paste(c('sf', 'sp', 'RasterLayer'), collapse = '|')))) |>
-      names() |>
-      as.character()       # my simple features
-    }
-
-# ## what are the spatial references of those SF classes?
-# mget(spatial_in_memory) %>% purrr::map(~crs(.x)) %>% unlist()
+#' @seealso `see_sf`
