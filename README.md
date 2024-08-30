@@ -6,8 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-LockeR is a safe place to keep random code snippets and functions for
-reuse.
+LockeR is a safe place to keep miscellaneous functions for reuse.
 
 ## Installation
 

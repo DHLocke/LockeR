@@ -24,7 +24,7 @@ inla_plot_fe(m2) # fixed effects, m2
 
 # great when used in conjunction with `get_inla()`
 # extract fixed effects from INLA models in memory
-LockeR::get_inla() |> mget() |> purrr::map(inla_table_fe)
+LockeR::get_inla() |> mget() |> purrr::map(inla_plot_fe)
 
 # bind together for custom graphing or export
 get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
@@ -33,5 +33,5 @@ get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
 get_inla() |> mget() |> purrr::map(inla_plot_fe)
 }
 \seealso{
-\code{get_inla} for identifying INLA model objects in memory and \code{inla_table_fe} for extracting tables of fixed effects from INLA objects
+\code{get_inla()} for identifying INLA model objects in memory and \code{inla_table_fe()} for extracting tables of fixed effects from INLA objects
 }

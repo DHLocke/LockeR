@@ -10,7 +10,8 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Suggests: 
-    tidyverse
+    tidyr,
+    INLA
 Imports: 
     sfdep,
     sf,
@@ -19,8 +20,6 @@ Imports:
     stringr,
     dplyr,
     tibble,
-    tidyr,
-    ggplot2,
-    INLA
+    ggplot2
 URL: https://github.com/DHLocke/LockeR
 BugReports: https://github.com/DHLocke/LockeR/issues

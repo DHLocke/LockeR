@@ -21,5 +21,5 @@ get_inla()                                   # character vector of models
 get_inla() |> mget()                         # list, ripe for map(...)
 }
 \seealso{
-\code{inla_plot_fe} for plotting fixed effects and, \code{inla_table_fe} for extracting tables of fixed effects from INLA objects
+\code{\link[=inla_plot_fe]{inla_plot_fe()}} for plotting fixed effects and, \code{\link[=inla_table_fe]{inla_table_fe()}} for extracting tables of fixed effects from INLA objects
 }

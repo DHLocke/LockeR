@@ -2,7 +2,7 @@
 #'
 #' @return a character vector of INLA objects in memory
 #' @export
-#' @seealso `inla_plot_fe` for plotting fixed effects and, `inla_table_fe` for extracting tables of fixed effects from INLA objects
+#' @seealso [inla_plot_fe()] for plotting fixed effects and, [inla_table_fe()] for extracting tables of fixed effects from INLA objects
 #'
 #' @examples
 #' get_inla()                                   # nothing if you have no INLA objects
