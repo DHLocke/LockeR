@@ -1,6 +1,5 @@
 #' Title convert Fahrenheit to Celsius
 #'
-#' @param fahr
 #'
 #' @return the degrees Celsius
 #' @export

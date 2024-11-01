@@ -2,12 +2,12 @@
 #'
 #' @param inla_model a model fit with INLA::inla()
 #'
-#' @return a tibble of fixed effects derived from a model fit with INLA::inla()
+#' @return a tibble of fixed effects derived from a model fit with INLA::inla(). Columns include the predictor variable (Predictors), median posterior estimate (median), and 95% Credible Interval, the Bayesian analog to 95% Confidence Intervals denoted with "lower" and "upper".
 #' @export
 #'
-#' @seealso `get_inla` for identifying INLA model objects in memory and `inla_plott_fe` ggplot graphs of fixed effects from INLA objects
+#' @seealso [get_inla()] for identifying INLA model objects in memory and [inla_plot_fe()] ggplot graphs of fixed effects from INLA objects
 #' @examples
-#' mtcars <- mtcars |> as.data.frame() # get data
+#' mtcars <- mtcars |> as.data.frame()         # get data
 #' m1 <- INLA::inla(mpg ~ 1   , data = mtcars) # fit an intercept-only model
 #' m2 <- INLA::inla(mpg ~ disp, data = mtcars) # fit another model
 #' inla_table_fe(m1)
@@ -22,8 +22,6 @@
 #'
 #' # graph multiple models' fixed effects
 #' get_inla() |> mget() |> purrr::map(inla_plot_fe)
-
-
 #' @seealso `inla_plot_fe`
 #'
 inla_table_fe <-

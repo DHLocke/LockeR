@@ -5,6 +5,8 @@
 #' @return a character vector
 #' @export
 #'
+#' @seealso [see_sf()]
+#'
 #' @examples
 #' see_spatial()                 # nothing
 #' library(sfdep)
@@ -25,3 +27,4 @@ see_spatial <-
 
 # ## what are the spatial references of those SF classes?
 # mget(spatial_in_memory) %>% purrr::map(~crs(.x)) %>% unlist()
+#' @seealso [see_sf()]

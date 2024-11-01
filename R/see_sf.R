@@ -8,7 +8,7 @@
 #' @return a character vector
 #' @export
 #'
-#' @seealso `see_spatial`
+#' @seealso [see_spatial()]
 #'
 #' @examples
 #' see_sf()                 # nothing
@@ -26,4 +26,4 @@ see_sf <-
       as.character()       # my simple features, as a character vector
   }
 
-#' @seealso `see_sf`
+#' @seealso [see_spatial()]

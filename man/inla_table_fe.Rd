@@ -10,13 +10,13 @@ inla_table_fe(inla_model)
 \item{inla_model}{a model fit with INLA::inla()}
 }
 \value{
-a tibble of fixed effects derived from a model fit with INLA::inla()
+a tibble of fixed effects derived from a model fit with INLA::inla(). Columns include the predictor variable (Predictors), median posterior estimate (median), and 95\% Credible Interval, the Bayesian analog to 95\% Confidence Intervals denoted with "lower" and "upper".
 }
 \description{
 Plot fixed effects from model fit with INLA::inla
 }
 \examples{
-mtcars <- mtcars |> as.data.frame() # get data
+mtcars <- mtcars |> as.data.frame()         # get data
 m1 <- INLA::inla(mpg ~ 1   , data = mtcars) # fit an intercept-only model
 m2 <- INLA::inla(mpg ~ disp, data = mtcars) # fit another model
 inla_table_fe(m1)
@@ -33,7 +33,7 @@ get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
 get_inla() |> mget() |> purrr::map(inla_plot_fe)
 }
 \seealso{
-\code{get_inla} for identifying INLA model objects in memory and \code{inla_plott_fe} ggplot graphs of fixed effects from INLA objects
+\code{\link[=get_inla]{get_inla()}} for identifying INLA model objects in memory and \code{\link[=inla_plot_fe]{inla_plot_fe()}} ggplot graphs of fixed effects from INLA objects
 
 \code{inla_plot_fe}
 }

@@ -18,7 +18,7 @@ mtcars <- mtcars |> as.data.frame()          # get data
 m1 <- INLA::inla(mpg ~ 1   , data = mtcars)  # fit an intercept-only model
 m2 <- INLA::inla(mpg ~ disp, data = mtcars)  # fit another model
 get_inla()                                   # character vector of models
-get_inla() |> mget()                         # list, ripe for map(...)
+get_inla() |> mget()                         # list of actual models, ripe for map(...)
 }
 \seealso{
 \code{\link[=inla_plot_fe]{inla_plot_fe()}} for plotting fixed effects and, \code{\link[=inla_table_fe]{inla_table_fe()}} for extracting tables of fixed effects from INLA objects

@@ -10,28 +10,34 @@ inla_plot_fe(inla_model)
 \item{inla_model}{a model fit with INLA::inla()}
 }
 \value{
-a ggplot graph of fixed effects derived from a model fit with INLA::inla()
+a ggplot graph of fixed effects derived from a model fit with INLA::inla(). Dots are medians, error bars are 95\% Credible Interval, the Bayesian analog to 95\% Confidence Intervals.
 }
 \description{
 Plot fixed effects from model fit with INLA::inla
 }
 \examples{
-mtcars <- mtcars |> as.data.frame() # get data
+mtcars <- mtcars |> as.data.frame()         # get data
 m1 <- INLA::inla(mpg ~ 1   , data = mtcars) # fit an intercept-only model
 m2 <- INLA::inla(mpg ~ disp, data = mtcars) # fit another model
-inla_plot_fe(m1) # fixed effects, m1
-inla_plot_fe(m2) # fixed effects, m2
+inla_plot_fe(m1)                            # fixed effects, m1
+inla_plot_fe(m2)                            # fixed effects, m2
 
-# great when used in conjunction with `get_inla()`
+# great when used in conjunction with [get_inla()]
 # extract fixed effects from INLA models in memory
 LockeR::get_inla() |> mget() |> purrr::map(inla_plot_fe)
 
 # bind together for custom graphing or export
 get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
+get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model') |>
+  ggplot2::ggplot(ggplot2::aes(median, Predictors, color = model)
+  , position = ggplot2::position_dodge(width = .5)) +
+  ggplot2::geom_point() +
+  ggplot2::geom_errorbarh(ggplot2::aes(xmin = lower, xmax = upper, height = .5)) +
+  NULL
 
 # graph multiple models' fixed effects
 get_inla() |> mget() |> purrr::map(inla_plot_fe)
 }
 \seealso{
-\code{get_inla()} for identifying INLA model objects in memory and \code{inla_table_fe()} for extracting tables of fixed effects from INLA objects
+\code{\link[=get_inla]{get_inla()}} for identifying INLA model objects in memory and \code{\link[=inla_table_fe]{inla_table_fe()}} for extracting tables of fixed effects from INLA objects
 }

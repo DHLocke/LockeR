@@ -6,9 +6,6 @@
 \usage{
 to_cel(fahr)
 }
-\arguments{
-\item{fahr}{}
-}
 \value{
 the degrees Celsius
 }

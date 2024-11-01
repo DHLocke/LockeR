@@ -6,8 +6,6 @@
 \alias{LockeR-package}
 \title{LockeR: collection of R functions Dexter Locke uses all of the time}
 \description{
-\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
-
 Its where I keep my valuables. Groups utilities commonly used by the author. This is the worst description ever - sorry.
 }
 \seealso{

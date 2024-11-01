@@ -21,5 +21,5 @@ see_spatial()            # also finds objects of class sp, sf, or RasterLayer
 # TODO link to get_crs
 }
 \seealso{
-\code{see_spatial}
+\code{\link[=see_spatial]{see_spatial()}}
 }
