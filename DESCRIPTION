@@ -20,6 +20,7 @@ Imports:
     stringr,
     dplyr,
     tibble,
-    ggplot2
+    ggplot2,
+    gtools
 URL: https://github.com/DHLocke/LockeR
 BugReports: https://github.com/DHLocke/LockeR/issues

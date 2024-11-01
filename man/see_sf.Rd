@@ -17,7 +17,7 @@ see_sf()                 # nothing
 library(sfdep)
 test_sf_object <- guerry # a built in dataset in the sfdep package
 see_sf()                 # character string of sf objects
-see_spatial()            # also finds objects of class sp, sf, or RasterLayer
+# want to find objects of class sp, sf, or RasterLayer[see_spatial()]
 # TODO link to get_crs
 }
 \seealso{

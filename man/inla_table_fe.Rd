@@ -30,7 +30,8 @@ LockeR::get_inla() |> mget() |> purrr::map(inla_table_fe)
 get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
 
 # graph multiple models' fixed effects
-get_inla() |> mget() |> purrr::map(inla_plot_fe)
+get_inla() |> mget() |> purrr::map(inla_table_fe)
+get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
 }
 \seealso{
 \code{\link[=get_inla]{get_inla()}} for identifying INLA model objects in memory and \code{\link[=inla_plot_fe]{inla_plot_fe()}} ggplot graphs of fixed effects from INLA objects

@@ -21,7 +21,8 @@
 #' get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
 #'
 #' # graph multiple models' fixed effects
-#' get_inla() |> mget() |> purrr::map(inla_plot_fe)
+#' get_inla() |> mget() |> purrr::map(inla_table_fe)
+#' get_inla() |> mget() |> purrr::map_dfr(inla_table_fe, .id = 'model')
 #' @seealso `inla_plot_fe`
 #'
 inla_table_fe <-
