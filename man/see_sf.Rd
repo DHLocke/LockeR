@@ -13,11 +13,11 @@ a character vector
 get sf objects in memory as character vector
 }
 \examples{
+# These examples only work when copy/pasted into the console since they refer to your environment
 see_sf()                 # nothing
 library(sfdep)
 test_sf_object <- guerry # a built in dataset in the sfdep package
 see_sf()                 # character string of sf objects
-want to find objects of class sp, sf, or RasterLayer [see_spatial()]
 # TODO link to get_crs
 }
 \seealso{
