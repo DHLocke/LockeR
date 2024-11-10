@@ -37,8 +37,8 @@ devtools::install_github("DHLocke/LockeR")
 This package relies heavily on:
 
 -   The [`tidyverse`](http://tidyverse.org/) packages, namely `dplyr`, `purrr`, `stringr`, `tibble`, and `ggplot2`
--   TODO something about SF-functions.
--   TODO something about INLA support
+-   The [`sf`](https://github.com/r-spatial/sf) for spatial data handling and [`spData`](https://jakubnowosad.com/spData/) packages spatial data in examples
+-   There are functions for graphing and extracting tables from model objects created by the [`INLA`](https://www.r-inla.org/) package
 
 ## Families of functions
 

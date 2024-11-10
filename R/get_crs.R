@@ -7,6 +7,7 @@
 #'
 #' @param sf_in_memory
 #'
+#' @import spData
 #' @return tibble of sf object names (sf) and their Wkt project information (WKt)
 #' @export
 #'
@@ -16,15 +17,23 @@
 #' data(alaska)
 #' data(nz)
 #' data(urban_agglomerations)
-#' (sf_in_memory <- see_sf())
-#' get_crs(sf_in_memory)
-#' sf_in_memory |> get_crs()
+#' see_sf()
+#' get_crs()
 get_crs <-
-  function(sf_in_memory) {
-    sf_in_memory |>
-      mget() |>
-      purrr::map_df(~sf::st_crs(.x, parameters = TRUE)$Wkt) |>
-      tibble::rowid_to_column() |>
-      tidyr::pivot_longer(-rowid, names_to = 'sf_dataset', values_to = 'Wkt') |>
-      dplyr::select(-rowid)
-  }
+  function(epsg = TRUE){
+    if (epsg == TRUE) {
+      see_sf() |>
+        mget() |>
+        purrr::map_df(~sf::st_crs(.x, parameters = TRUE)$epsg) |>
+        tibble::rowid_to_column() |>
+        tidyr::pivot_longer(-rowid, names_to = 'sf_dataset', values_to = 'epsg') |>
+        dplyr::select(-rowid)
+    } else {
+      see_sf() |>
+        mget() |>
+        purrr::map_df(~sf::st_crs(.x, parameters = TRUE)$Wkt) |>
+        tibble::rowid_to_column() |>
+        tidyr::pivot_longer(-rowid, names_to = 'sf_dataset', values_to = 'Wkt') |>
+        dplyr::select(-rowid)
+    }
+    }

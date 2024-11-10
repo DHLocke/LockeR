@@ -4,7 +4,7 @@
 \alias{get_crs}
 \title{get the coordinate reference system (CRS) for simple feature object}
 \usage{
-get_crs(sf_in_memory)
+get_crs(epsg = TRUE)
 }
 \arguments{
 \item{sf_in_memory}{}
@@ -21,7 +21,6 @@ library(spData) # package of spatial data, see also 'spDataLarge'
 data(alaska)
 data(nz)
 data(urban_agglomerations)
-(sf_in_memory <- see_sf())
-get_crs(sf_in_memory)
-sf_in_memory |> get_crs()
+see_sf()
+get_crs()
 }
