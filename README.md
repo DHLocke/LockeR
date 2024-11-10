@@ -29,9 +29,12 @@ devtools::install_github("DHLocke/LockeR")
 This package relies heavily on:
 
 - The [`tidyverse`](http://tidyverse.org/) packages, namely `dplyr`,
-  `tidyr`, `purrr`, `stringr`, `tibble`, and `ggplot2`
-- TODO something about SF-functions.
-- TODO something about INLA support
+  `purrr`, `stringr`, `tibble`, and `ggplot2`
+- The [`sf`](https://github.com/r-spatial/sf) for spatial data handling
+  and [`spData`](https://jakubnowosad.com/spData/) packages spatial data
+  in examples
+- There are functions for graphing and extracting tables from model
+  objects created by the [`INLA`](https://www.r-inla.org/) package.
 
 ## Families of functions
 
@@ -43,7 +46,7 @@ particular order
     and
     [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R)
     identify sf, and sf, sp, and/or RasterLayer objects in memory,
-    respectively.
+    respectively. TODO expand to other object types
 
 2.  **INLA support:** functions including
     [get_inla()](https://github.com/DHLocke/LockeR/blob/main/R/get_inla.R),
@@ -64,7 +67,7 @@ particular order
     which convert from degrees Fahrenheit to degrees Celsius, and
     degrees Celsius to degrees Fahrenheit, respectively.
 
-4.  **regex in action**
+4.  **Regular Expressions (regex) in action**
 
     - [phone_it_in](https://github.com/DHLocke/LockeR/blob/main/R/phone_it_in.R)
       which standardizes 7 and 10 digit phone numbers with regular
