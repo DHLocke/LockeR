@@ -5,6 +5,7 @@
 #' @description
 #' this finds and extracts the string between "(" and ")".
 #'
+#' @param string_w_parens string containing parentheses with text to be exracted
 #' @return the text between two parentheses
 #' @export
 #'

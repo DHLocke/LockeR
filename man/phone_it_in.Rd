@@ -6,6 +6,11 @@
 \usage{
 phone_it_in(phone, invalid = NA)
 }
+\arguments{
+\item{phone}{string containing phone numbers to be standardized}
+
+\item{invalid}{identifies candidates that are possibly not phone numbers at all}
+}
 \value{
 phone numbers in a ###-#### or ###-###-#### format
 }

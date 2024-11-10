@@ -6,6 +6,9 @@
 \usage{
 text_in_parens(string_w_parens)
 }
+\arguments{
+\item{string_w_parens}{string containing parentheses with text to be exracted}
+}
 \value{
 the text between two parentheses
 }

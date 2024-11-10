@@ -3,6 +3,9 @@
 #' @description
 #' Standardize 7 and 10 digit numbers to have consistent formatting without parentheses, with dashes between the 3rd and 4th digits and between the 6th and 7th digits when an area code is provided. Numbers not 7 or 10 digits in length are assigned NA by default, but can be assigned a chosen value with the "invalid" argument.
 #'
+#' @param phone string containing phone numbers to be standardized
+#' @param invalid identifies candidates that are possibly not phone numbers at all
+#'
 #' @return phone numbers in a ###-#### or ###-###-#### format
 #' @export
 #'

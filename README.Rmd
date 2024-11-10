@@ -44,7 +44,7 @@ This package relies heavily on:
 
 right now there are four main groups of interrelated functions, in no particular order
 
-1.  **spatial support:** functions including [see_sf()](https://github.com/DHLocke/LockeR/blob/main/R/see_sf.R) and [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R) identify sf, and sf, sp, and/or RasterLayer objects in memory, respectively.
+1.  **spatial support:** functions including [see_sf()](https://github.com/DHLocke/LockeR/blob/main/R/see_sf.R) and [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R) identify sf, and sf, sp, and/or RasterLayer objects in memory, respectively. TODO expand to other object types
 
 2.  **INLA support:** functions including [get_inla()](https://github.com/DHLocke/LockeR/blob/main/R/get_inla.R), [inla_plot_fe()](https://github.com/DHLocke/LockeR/blob/main/R/inla_plot_fe.R), and [inla_table_fe()](https://github.com/DHLocke/LockeR/blob/main/R/inla_table_fe.R) for accessing and prying information out of objects created by the [`INLA`](https://www.r-inla.org/) package. INLA (Integrated Nested Laplace Approximation) is an method for approximate Bayesian inference. It uses calculus instead of Markov Chain Monte Carlo methods. The resultant model objects are densely-packed list objects, and these functions make handling and extracting summaries more user-friendly.
 
