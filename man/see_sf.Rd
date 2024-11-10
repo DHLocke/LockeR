@@ -15,8 +15,8 @@ get sf objects in memory as character vector
 \examples{
 # These examples only work when copy/pasted into the console since they refer to your environment
 see_sf()                 # nothing
-library(sfdep)
-test_sf_object <- guerry # a built in dataset in the sfdep package
+library(sf)
+test_sf_object <- nz     # a built in dataset in the sf package
 see_sf()                 # character string of sf objects
 # TODO link to get_crs
 }

@@ -13,7 +13,6 @@ Suggests:
     tidyr,
     INLA
 Imports: 
-    sfdep,
     sf,
     base,
     purrr,

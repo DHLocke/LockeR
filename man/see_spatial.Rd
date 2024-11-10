@@ -14,10 +14,11 @@ get spatial (sf, sp, RasterLayer) objects in memory as character vector
 }
 \examples{
 # These examples only work when copy/pasted into the console since they refer to your environment
-see_spatial()                 # nothing
-library(sfdep)
-test_sf_object <- guerry # a built in dataset in the sfdep package, an sf object
-see_spatial()                 # character string of sf objects
+see_spatial()            # nothing
+see_sf()                 # nothing
+library(sf)
+test_sf_object <- nz     # a built in dataset in the sf package
+see_spatial()            # character string of sf objects
 see_spatial()            # also finds objects of class sp, sf, or RasterLayer
 # TODO link to get_crs
 }
