@@ -6,6 +6,9 @@
 \usage{
 to_fahr(celsius)
 }
+\arguments{
+\item{celsius}{degrees Celsius}
+}
 \value{
 the degrees Fahrenheit
 }

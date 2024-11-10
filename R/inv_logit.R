@@ -1,5 +1,6 @@
 #' inverse logit function
 #'
+#' @param x the number or vector to be converted
 #' @return the inverse logit
 #' @export
 #'
@@ -13,7 +14,7 @@
 #'                 )
 #' look_up_probs |> dplyr::filter(OR == 1)
 inv_logit <- function(x){
-  # Calculate the inverse logit of a number
+  # Calculate the inverse logit of number
   # copied directly from boot
   # https://rdrr.io/cran/boot/src/R/bootfuns.q
   out <- exp(x)/(1+exp(x))

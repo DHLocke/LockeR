@@ -36,7 +36,7 @@ devtools::install_github("DHLocke/LockeR")
 
 This package relies heavily on:
 
--   The [`tidyverse`](http://tidyverse.org/) packages, namely `dplyr`, `tidyr`, `purrr`, `stringr`, `tibble`, and `ggplot2`
+-   The [`tidyverse`](http://tidyverse.org/) packages, namely `dplyr`, `purrr`, `stringr`, `tibble`, and `ggplot2`
 -   TODO something about SF-functions.
 -   TODO something about INLA support
 
@@ -50,7 +50,7 @@ right now there are four main groups of interrelated functions, in no particular
 
 3.  **temperature conversions:** functions including [to_cel()](https://github.com/DHLocke/LockeR/blob/main/R/to_cel.R), [to_farh()](https://github.com/DHLocke/LockeR/blob/main/R/to_farh.R), which convert from degrees Fahrenheit to degrees Celsius, and degrees Celsius to degrees Fahrenheit, respectively.
 
-4.  **regex in action**
+4.  **Regular Expressions (regex) in action**
 
     -   [phone_it_in](https://github.com/DHLocke/LockeR/blob/main/R/phone_it_in.R) which standardizes 7 and 10 digit phone numbers with regular expressions, pulled from a [stackoverflow](https://stackoverflow.com/questions/34616466/formatting-phone-numbers-in-r) answer by [Benjamin](https://stackoverflow.com/users/1017276/benjamin).
 

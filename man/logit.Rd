@@ -6,6 +6,9 @@
 \usage{
 logit(p)
 }
+\arguments{
+\item{p}{proportion to be converted}
+}
 \value{
 the inverse logit
 }

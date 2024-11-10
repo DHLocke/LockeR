@@ -5,6 +5,7 @@
 #' @seealso [inla_plot_fe()] for plotting fixed effects and, [inla_table_fe()] for extracting tables of fixed effects from INLA objects
 #'
 #' @examples
+#' # These examples only work when copy/pasted into the console since they refer to your environment
 #' get_inla()                                   # nothing if you have no INLA objects
 #' mtcars <- mtcars |> as.data.frame()          # get data
 #' m1 <- INLA::inla(mpg ~ 1   , data = mtcars)  # fit an intercept-only model

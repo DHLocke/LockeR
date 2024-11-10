@@ -1,5 +1,6 @@
 #' inverse logit function
 #'
+#' @param p proportion to be converted
 #' @return the inverse logit
 #' @export
 #'

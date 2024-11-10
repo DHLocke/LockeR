@@ -6,6 +6,9 @@
 \usage{
 inv_logit(x)
 }
+\arguments{
+\item{x}{the number or vector to be converted}
+}
 \value{
 the inverse logit
 }

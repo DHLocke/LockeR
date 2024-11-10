@@ -8,6 +8,7 @@
 #' @seealso [see_sf()]
 #'
 #' @examples
+#' # These examples only work when copy/pasted into the console since they refer to your environment
 #' see_spatial()                 # nothing
 #' library(sfdep)
 #' test_sf_object <- guerry # a built in dataset in the sfdep package, an sf object
