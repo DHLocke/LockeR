@@ -13,7 +13,7 @@ a character vector of INLA objects in memory
 get character vector of INLA objects in memory
 }
 \examples{
-# need to be copy/pasted into console
+# These examples only work when copy/pasted into the console since they refer to your environment
 get_inla()                                   # nothing if you have no INLA objects
 mtcars <- mtcars |> as.data.frame()          # get data
 m1 <- INLA::inla(mpg ~ 1   , data = mtcars)  # fit an intercept-only model
