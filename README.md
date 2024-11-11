@@ -96,6 +96,13 @@ particular order
       difficult! Taken from [this
       post](https://community.rstudio.com/t/extract-text-between-brakets/43448/6).
 
+    - [str_replace_many](https://github.com/DHLocke/LockeR/blob/main/R/str_replace_many.R)
+      like
+      [stringr::str_replace_all]('https://stringr.tidyverse.org/reference/str_replace.html')
+      but accepts many from and to replacements at once, copied from
+      [@JosiahParry](https://gist.github.com/JosiahParry) ’s
+      [Gist](https://gist.github.com/JosiahParry/7d953f4af6848e7012566f7abfc63473).
+
 5.  **Potpourri (strange since the package is *already* a bag of
     miscellany):**
 

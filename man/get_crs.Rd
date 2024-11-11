@@ -2,7 +2,8 @@
 % Please edit documentation in R/get_crs.R
 \name{get_crs}
 \alias{get_crs}
-\title{get the coordinate reference system (CRS) for simple feature object}
+\title{get the coordinate reference system (CRS) for simple feature object
+DOES NOT CURRENTLY WORK DO NOT USE!!!}
 \usage{
 get_crs(epsg = TRUE)
 }
@@ -14,6 +15,7 @@ tibble of sf object names (sf) and their Wkt project information (WKt)
 }
 \description{
 get the coordinate reference system (CRS) for simple feature object
+DOES NOT CURRENTLY WORK DO NOT USE!!!
 }
 \examples{
 library(sf)

@@ -60,6 +60,8 @@ right now there are five main groups of interrelated functions, in no particular
     -   [phone_it_in](https://github.com/DHLocke/LockeR/blob/main/R/phone_it_in.R) which standardizes 7 and 10 digit phone numbers with regular expressions, pulled from a [stackoverflow](https://stackoverflow.com/questions/34616466/formatting-phone-numbers-in-r) answer by [Benjamin](https://stackoverflow.com/users/1017276/benjamin).
 
     -   [text_in_parens](https://github.com/DHLocke/LockeR/blob/main/R/text_it_parens.R) which extracts text from within parentheses, which is surprisingly difficult! Taken from [this post](https://community.rstudio.com/t/extract-text-between-brakets/43448/6).
+    
+    -   [str_replace_many](https://github.com/DHLocke/LockeR/blob/main/R/str_replace_many.R) like [stringr::str_replace_all]('https://stringr.tidyverse.org/reference/str_replace.html') but accepts many from and to replacements at once, copied from [@JosiahParry](https://gist.github.com/JosiahParry) 's [Gist](https://gist.github.com/JosiahParry/7d953f4af6848e7012566f7abfc63473).
 
 5.  **Potpourri (strange since the package is *already* a bag of miscellany):**
 

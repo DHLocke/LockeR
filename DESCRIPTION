@@ -21,6 +21,8 @@ Imports:
     dplyr,
     tibble,
     ggplot2,
-    parallel
+    parallel,
+    rlang,
+    cli
 URL: https://github.com/DHLocke/LockeR
 BugReports: https://github.com/DHLocke/LockeR/issues
