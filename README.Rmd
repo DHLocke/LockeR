@@ -43,7 +43,7 @@ This package relies heavily on:
 
 ## Families of functions
 
-right now there are four main groups of interrelated functions, in no particular order
+right now there are five main groups of interrelated functions, in no particular order
 
 1.  **Spatial Support:** functions including [see_sf()](https://github.com/DHLocke/LockeR/blob/main/R/see_sf.R) and [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R) identify sf, and sf, sp, and/or RasterLayer objects in memory, respectively. The [st_parallel()](https://github.com/DHLocke/LockeR/blob/main/R/st_parallel.R) parallizes any st_* function in the sf package to take advantage of mutli-core processing for large jobs. This is especially useful for overlay operations like st_intersection.
 

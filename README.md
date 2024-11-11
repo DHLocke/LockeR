@@ -45,7 +45,7 @@ This package relies heavily on:
 
 ## Families of functions
 
-right now there are four main groups of interrelated functions, in no
+right now there are five main groups of interrelated functions, in no
 particular order
 
 1.  **Spatial Support:** functions including
