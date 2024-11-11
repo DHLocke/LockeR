@@ -35,6 +35,11 @@ This package relies heavily on:
   in examples
 - There are functions for graphing and extracting tables from model
   objects created by the [`INLA`](https://www.r-inla.org/) package.
+- The
+  [`parallel`](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf)
+  is used for the st_parallel function which takes any
+  [`sf`](https://github.com/r-spatial/sf) function and parallelizes
+  them, to process large jobs faster over multiple cores.
 
 ## Families of functions
 
@@ -46,7 +51,15 @@ particular order
     and
     [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R)
     identify sf, and sf, sp, and/or RasterLayer objects in memory,
-    respectively. TODO expand to other object types
+    respectively. The
+    [st_parallel()](https://github.com/DHLocke/LockeR/blob/main/R/st_parallel.R)
+    parallizes any st\_\* function in the sf package to take advantage
+    of mutli-core processing for large jobs. This is especially useful
+    for overlay operations like st_intersection.
+
+    - TODO expand to other object types
+
+    - TODO fix get_crs to actually work!
 
 2.  **INLA support:** functions including
     [get_inla()](https://github.com/DHLocke/LockeR/blob/main/R/get_inla.R),
@@ -83,6 +96,12 @@ particular order
 
 5.  **potpourri (strange since the package is *already* a bag of
     miscellany):**
+
+    - [set_up_dirs()](https://github.com/DHLocke/LockeR/blob/main/R/set_up_dirs.R)
+      makes commonly-used folders to expedite project set up, and create
+      standardization across projects. This makes it easier to re-use
+      snippets of code from other projects to save out tables and
+      figures.
 
     - [logit()](https://github.com/DHLocke/LockeR/blob/main/R/to_cel.R)
       and

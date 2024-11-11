@@ -1,10 +1,9 @@
-
 ## what are the spatial references of those sf classes?
 #
 # call this get_crs?
 # mget(sf_in_memory) %>% purrr::map(~st_crs(.x)$epsg) %>% unlist()
 #' get the coordinate reference system (CRS) for simple feature object
-#'
+#' DOES NOT CURRENTLY WORK DO NOT USE!!!
 #' @param sf_in_memory
 #'
 #' @import spData

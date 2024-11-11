@@ -38,13 +38,18 @@ This package relies heavily on:
 
 -   The [`tidyverse`](http://tidyverse.org/) packages, namely `dplyr`, `purrr`, `stringr`, `tibble`, and `ggplot2`
 -   The [`sf`](https://github.com/r-spatial/sf) for spatial data handling and [`spData`](https://jakubnowosad.com/spData/) packages spatial data in examples
--   There are functions for graphing and extracting tables from model objects created by the [`INLA`](https://www.r-inla.org/) package. 
+-   There are functions for graphing and extracting tables from model objects created by the [`INLA`](https://www.r-inla.org/) package.
+-   The [`parallel`](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf) is used for the st_parallel function which takes any [`sf`](https://github.com/r-spatial/sf) function and parallelizes them, to process large jobs faster over multiple cores.
 
 ## Families of functions
 
 right now there are four main groups of interrelated functions, in no particular order
 
-1.  **spatial support:** functions including [see_sf()](https://github.com/DHLocke/LockeR/blob/main/R/see_sf.R) and [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R) identify sf, and sf, sp, and/or RasterLayer objects in memory, respectively. TODO expand to other object types
+1.  **spatial support:** functions including [see_sf()](https://github.com/DHLocke/LockeR/blob/main/R/see_sf.R) and [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R) identify sf, and sf, sp, and/or RasterLayer objects in memory, respectively. The [st_parallel()](https://github.com/DHLocke/LockeR/blob/main/R/st_parallel.R) parallizes any st_* function in the sf package to take advantage of mutli-core processing for large jobs. This is especially useful for overlay operations like st_intersection.
+
+    -   TODO expand to other object types
+
+    -   TODO fix get_crs to actually work!
 
 2.  **INLA support:** functions including [get_inla()](https://github.com/DHLocke/LockeR/blob/main/R/get_inla.R), [inla_plot_fe()](https://github.com/DHLocke/LockeR/blob/main/R/inla_plot_fe.R), and [inla_table_fe()](https://github.com/DHLocke/LockeR/blob/main/R/inla_table_fe.R) for accessing and prying information out of objects created by the [`INLA`](https://www.r-inla.org/) package. INLA (Integrated Nested Laplace Approximation) is an method for approximate Bayesian inference. It uses calculus instead of Markov Chain Monte Carlo methods. The resultant model objects are densely-packed list objects, and these functions make handling and extracting summaries more user-friendly.
 
@@ -57,6 +62,8 @@ right now there are four main groups of interrelated functions, in no particular
     -   [text_in_parens](https://github.com/DHLocke/LockeR/blob/main/R/text_it_parens.R) which extracts text from within parentheses, which is surprisingly difficult! Taken from [this post](https://community.rstudio.com/t/extract-text-between-brakets/43448/6).
 
 5.  **potpourri (strange since the package is *already* a bag of miscellany):**
+
+    -   [set_up_dirs()](https://github.com/DHLocke/LockeR/blob/main/R/set_up_dirs.R) makes commonly-used folders to expedite project set up, and create standardization across projects. This makes it easier to re-use snippets of code from other projects to save out tables and figures.
 
     -   [logit()](https://github.com/DHLocke/LockeR/blob/main/R/to_cel.R) and [inv_logit()](https://github.com/DHLocke/LockeR/blob/main/R/to_cel.R) which takes logit and the inverse logit of proportions, copied from the boot package.
 
