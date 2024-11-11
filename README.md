@@ -32,21 +32,23 @@ This package relies heavily on:
   `purrr`, `stringr`, `tibble`, and `ggplot2`
 - The [`sf`](https://github.com/r-spatial/sf) for spatial data handling
   and [`spData`](https://jakubnowosad.com/spData/) packages spatial data
-  in examples
+  in examples.
 - There are functions for graphing and extracting tables from model
   objects created by the [`INLA`](https://www.r-inla.org/) package.
 - The
   [`parallel`](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf)
-  is used for the st_parallel function which takes any
-  [`sf`](https://github.com/r-spatial/sf) function and parallelizes
-  them, to process large jobs faster over multiple cores.
+  is used for the
+  [st_parallel()](https://github.com/DHLocke/LockeR/blob/main/R/st_parallel.R)
+  function which takes any [`sf`](https://github.com/r-spatial/sf)
+  function and parallelizes them, to process large jobs faster over
+  multiple cores.
 
 ## Families of functions
 
 right now there are four main groups of interrelated functions, in no
 particular order
 
-1.  **spatial support:** functions including
+1.  **Spatial Support:** functions including
     [see_sf()](https://github.com/DHLocke/LockeR/blob/main/R/see_sf.R)
     and
     [see_spatial()](https://github.com/DHLocke/LockeR/blob/main/R/see_spatial.R)
@@ -61,7 +63,7 @@ particular order
 
     - TODO fix get_crs to actually work!
 
-2.  **INLA support:** functions including
+2.  **INLA Support:** functions including
     [get_inla()](https://github.com/DHLocke/LockeR/blob/main/R/get_inla.R),
     [inla_plot_fe()](https://github.com/DHLocke/LockeR/blob/main/R/inla_plot_fe.R),
     and
@@ -74,13 +76,13 @@ particular order
     objects, and these functions make handling and extracting summaries
     more user-friendly.
 
-3.  **temperature conversions:** functions including
+3.  **Temperature Conversions:** functions including
     [to_cel()](https://github.com/DHLocke/LockeR/blob/main/R/to_cel.R),
     [to_farh()](https://github.com/DHLocke/LockeR/blob/main/R/to_farh.R),
     which convert from degrees Fahrenheit to degrees Celsius, and
     degrees Celsius to degrees Fahrenheit, respectively.
 
-4.  **Regular Expressions (regex) in action**
+4.  **Regular Expressions (regex) in Action**
 
     - [phone_it_in](https://github.com/DHLocke/LockeR/blob/main/R/phone_it_in.R)
       which standardizes 7 and 10 digit phone numbers with regular
@@ -94,7 +96,7 @@ particular order
       difficult! Taken from [this
       post](https://community.rstudio.com/t/extract-text-between-brakets/43448/6).
 
-5.  **potpourri (strange since the package is *already* a bag of
+5.  **Potpourri (strange since the package is *already* a bag of
     miscellany):**
 
     - [set_up_dirs()](https://github.com/DHLocke/LockeR/blob/main/R/set_up_dirs.R)
