@@ -1,7 +1,7 @@
 #' set up directories
 #'
 #' @description
-#' This creates commonly-used directories quickly, instead of manually making each folder manually, one at a time. If a directory with that name already exists in the chosen location, a new one is NOT created.
+#' This creates commonly-used directories quickly, instead of manually making each folder, one at a time. If a directory with that name already exists in the chosen location, a new one is NOT created.
 #'
 #' @param proj_root the project's root folder, this is where the new folders will be created.
 #' @param folders a vector of strings contianing the names of the new folders to make
