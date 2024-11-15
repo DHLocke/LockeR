@@ -12,7 +12,7 @@ set_up_dirs(proj_root, folders)
 \item{folders}{a vector of strings contianing the names of the new folders to make}
 }
 \description{
-This creates commonly-used directories quickly, instead of manually making each folder manually, one at a time. If a directory with that name already exists in the chosen location, a new one is NOT created.
+This creates commonly-used directories quickly, instead of manually making each folder, one at a time. If a directory with that name already exists in the chosen location, a new one is NOT created.
 }
 \examples{
 (proj_root <- file.path(getwd()))
