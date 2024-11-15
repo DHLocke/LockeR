@@ -38,7 +38,7 @@ This package relies heavily on:
 - The
   [`parallel`](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf)
   is used for the
-  [st_parallel()](https://github.com/DHLocke/LockeR/blob/main/R/st_parallel.R)
+  [st_parallel()](https://github.com/DHLocke/LockeR/blob/main/R/st_parrallel.R)
   function which takes any [`sf`](https://github.com/r-spatial/sf)
   function and parallelizes them, to process large jobs faster over
   multiple cores.
