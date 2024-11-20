@@ -7,7 +7,7 @@
 #' @return a character vector
 #' @export
 #'
-#' @seealso [see_spatial()]
+#' @seealso [see_spatial()], [see_crs()]
 #'
 #' @examples
 #' # These examples only work when copy/pasted into the console since they refer to your environment

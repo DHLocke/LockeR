@@ -17,4 +17,3 @@ get_inla <- function(){
     names() |>
     as.character()
 }
-

@@ -2,20 +2,15 @@
 % Please edit documentation in R/get_crs.R
 \name{get_crs}
 \alias{get_crs}
-\title{get the coordinate reference system (CRS) for simple feature object
-DOES NOT CURRENTLY WORK DO NOT USE!!!}
+\title{get the coordinate reference system (CRS) for simple feature objects in memory}
 \usage{
-get_crs(epsg = TRUE)
-}
-\arguments{
-\item{sf_in_memory}{}
+get_crs()
 }
 \value{
-tibble of sf object names (sf) and their Wkt project information (WKt)
+tibble of sf object names (sf) and their epsg and Wkt projection information (WKt)
 }
 \description{
-get the coordinate reference system (CRS) for simple feature object
-DOES NOT CURRENTLY WORK DO NOT USE!!!
+get the coordinate reference system (CRS) for simple feature objects in memory
 }
 \examples{
 library(sf)

@@ -21,5 +21,5 @@ see_sf()                 # character string of sf objects
 # TODO link to get_crs
 }
 \seealso{
-\code{\link[=see_spatial]{see_spatial()}}
+\code{\link[=see_spatial]{see_spatial()}}, \code{\link[=see_crs]{see_crs()}}
 }
