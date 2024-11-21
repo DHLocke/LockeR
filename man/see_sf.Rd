@@ -4,7 +4,7 @@
 \alias{see_sf}
 \title{get sf objects in memory as character vector}
 \usage{
-see_sf()
+see_sf(env = rlang::caller_env())
 }
 \value{
 a character vector
@@ -15,11 +15,12 @@ get sf objects in memory as character vector
 \examples{
 # These examples only work when copy/pasted into the console since they refer to your environment
 see_sf()                 # nothing
-library(sf)
-test_sf_object <- nz     # a built in dataset in the sf package
-see_sf()                 # character string of sf objects
-# TODO link to get_crs
+library(spData)          # load a few datasets from the spData package
+data(alaska)
+data(nz)
+data(urban_agglomerations)
+see_sf()                 # character string of sf objects, alaska, nz, urban_agglomerations
 }
 \seealso{
-\code{\link[=see_spatial]{see_spatial()}}, \code{\link[=see_crs]{see_crs()}}
+\code{\link[=see_spatial]{see_spatial()}} a more generalized version of see_sf, \code{\link[=get_crs]{get_crs()}} reports the coordinate reference system, it follows see_sf and see_spatial nicely.
 }

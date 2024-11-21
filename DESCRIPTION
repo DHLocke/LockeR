@@ -15,6 +15,7 @@ Suggests:
 Imports: 
     sf,
     spData,
+    raster,
     base,
     purrr,
     stringr,

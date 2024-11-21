@@ -4,7 +4,7 @@
 \alias{get_crs}
 \title{get the coordinate reference system (CRS) for simple feature objects in memory}
 \usage{
-get_crs()
+get_crs(sf_or_all = "sf")
 }
 \value{
 tibble of sf object names (sf) and their epsg and Wkt projection information (WKt)
